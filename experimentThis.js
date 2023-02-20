@@ -1,15 +1,11 @@
-let a = 10;
-var temp=function Counter(){
-    let a = 20;
-    console.log(this.a);
-    this.in = function(){
-        a++;
-        console.log(a);
+const video = {
+    title: 'Thirumalai',
+    tags: ['a','b','c'],
+    showTag(){
+        this.tags.forEach(function(each){
+            console.log(each);
+        });
     }
-    console.log(this);
 }
 
-temp();
-console.log("done");
-var obj = new temp();
-obj.in();
+video.showTag();
