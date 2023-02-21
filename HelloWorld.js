@@ -1,5 +1,5 @@
-var b = function a(){
-    console.log("a");
-}
+console.log("Start");
+setTimeout(function (){console.log("Timed out")}, 5000);
 
-b();
+fetch("https://www.netflix.com", {mode: "no-cors"}).then(() => {console.log("Netflix loaded")});
+console.log("End");
