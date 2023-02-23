@@ -1,6 +1,6 @@
 console.log("START Global");
 let a = 10;
-function promise1(){
+export default function promise1(){
     return new Promise(function (resolve, reject){
         console.log("Executing Promise 1");
         if(a === 10){
