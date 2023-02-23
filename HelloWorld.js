@@ -1,5 +1,7 @@
 console.log("Start");
-setTimeout(function (){console.log("Timed out")}, 5000);
+setTimeout(function (){
+    console.log("initiating dom change");
+    document.getElementById("mainHeader").innerHTML = "Hello JS";
+}, 2000)
 
-fetch("https://www.netflix.com", {mode: "no-cors"}).then(() => {console.log("Netflix loaded")});
 console.log("End");
